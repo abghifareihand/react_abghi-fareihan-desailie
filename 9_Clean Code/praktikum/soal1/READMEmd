@@ -1,0 +1,42 @@
+## SOAL
+
+1. Berapa banyak kesalahan dalam penulisan kode tersebut? Ada tiga
+2. Bagian mana saja yang terjadi kekurangan tersebut?
+    - Penamaan variable, function dan Class.
+    - Pendeklarasian variabel pada Parent Class.
+    - Pendeklarasian child Class.
+
+3. Tuliskan alasan dari tiap kekurangan tersebut!
+
+- __Penamaan variable, function dan Class.__
+untuk membedakan antara variable, function dan class. sebaiknya dalam penamaan class diawali dengan huruf kapital. Kemudian untuk nama variabel dan function sebaiknya menggunakan camelCase.
+
+| Contoh | Sebaiknya |
+| ------- | ------- |
+| class user {} | class User {} |
+| class userservice {} | class UserService {} |
+| username | userName |
+| getallusers | getAllUsers |
+| getuserbyid | getUserById |
+
+<br>
+
+- __Pendeklarasian variabel pada Parent Class.__
+pendeklarasian property pada parent class sebaiknya gunakan constructor() method.
+
+| Pada contoh	 | sebaiknya |
+| -------------- | ------------- |
+| var id; <br> var username; <br> var password; | constructor(id, userName, password) <br> this.id = id; <br> this.userName = userName; <br> this.password = password; |
+| class userservice {} | class UserService {} |
+
+<br>
+
+- __Pendeklarasian child Class.__
+
+pada child class sebaiknya gunakan inheritance. kemudian untuk mendeklarasikan property dan value bisa kita gunakan super() method.
+
+| Contoh	 | sebaiknya |
+| -------------- | ------------- |
+| class userService { <br> user [] users = [] } | class userService extends User {} |
+| user [] users = [] | constructor(id, userName, password){ <br> super(id, userName, password)} |
+| user [] getAllUsers{} | getAllUsers() =>{} |
