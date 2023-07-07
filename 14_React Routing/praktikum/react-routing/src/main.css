@@ -1,0 +1,38 @@
+.heading {
+    font-size: 24px;
+    text-align: center;
+    position: relative;
+    margin-bottom: 18px;
+    padding: 20px;
+}
+
+.page-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.page-icon {
+    margin: auto;
+    width: 25%;
+}
+
+.button {
+    padding: 7px 10px;
+    margin: 18px 0;
+    width: max-content;
+    align-self: center;
+    border-radius: 40px;
+    border: none;
+    background-color: #8cd4eb;
+    cursor: pointer;
+    filter: drop-shadow(0px 0px .5px #312d2d);
+}
+
+.button a {
+    text-decoration: none;
+    color: black
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap'
+);
